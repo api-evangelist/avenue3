@@ -1,0 +1,38 @@
+generated: '2026-09-02'
+method: probed
+source: live HTTP probes of the named /.well-known/ path list, 2026-09-02
+note: >-
+  Every named path 404s. avenue3.com is a Webflow-hosted marketing site; requests under
+  /.well-known/ return Webflow's own 404 body ("Invalid .well-known request"), so these are
+  genuine absences rather than an SPA catch-all answering 200. No WellKnown, SecurityTxt or
+  APICatalog pointer is emitted, because nothing is served.
+hosts:
+- host: avenue3.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+summary:
+  documents_served: 0
+  pointer_emitted: false

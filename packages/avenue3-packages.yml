@@ -1,0 +1,82 @@
+generated: '2026-09-02'
+method: searched
+source: https://github.com/Avenue3-dev + registry.npmjs.org + api.nuget.org (unauthenticated registry metadata, probed 2026-09-02)
+note: >-
+  Avenue3 publishes no API of its own, so none of these are API client SDKs. They are
+  general-purpose open-source developer libraries shipped by the company's own GitHub
+  organisation (Avenue3-dev, whose profile carries blog https://avenue3.com and email
+  dev@avenue3.com, confirming ownership). They are recorded here because they are the
+  company's only public machine-consumable technical surface. Deliberately NOT wired as
+  `type: SDKs`: sdk_count measures client libraries for a provider's API, and Avenue3 has
+  no API for these to wrap.
+ownership_evidence:
+  github_org: https://github.com/Avenue3-dev
+  org_blog: https://avenue3.com
+  org_email: dev@avenue3.com
+  npm_scope: '@avenue3-dev'
+packages:
+- name: '@avenue3-dev/eslint-config'
+  registry: npm
+  url: https://www.npmjs.com/package/@avenue3-dev/eslint-config
+  repository: https://github.com/Avenue3-dev/eslint-config-avenue3
+  language: JavaScript
+  official: true
+  api_client: false
+  license: MIT
+  description: A collection of ESLint configurations for Avenue3 projects.
+  version: 2.0.1
+  published: '2026-07-23'
+- name: Avenue3.MinimalApiValidation
+  registry: nuget
+  url: https://www.nuget.org/packages/Avenue3.MinimalApiValidation
+  repository: https://github.com/Avenue3-dev/minimal-api-validation
+  language: C#
+  official: true
+  api_client: false
+  description: >-
+    Middleware to automatically validate headers, query parameters and the request body of
+    dotnet minimal API endpoints.
+  version: 2.1.0
+  published: '2026-05-18'
+- name: '@avenue3-dev/cypress-mantine-helpers'
+  registry: npm
+  url: https://www.npmjs.com/package/@avenue3-dev/cypress-mantine-helpers
+  repository: https://github.com/Avenue3-dev/cypress-mantine-helpers
+  language: TypeScript
+  official: true
+  api_client: false
+  license: MIT
+  description: A collection of helpers for testing Mantine components with Cypress.
+  version: 0.1.3
+  published: '2025-04-16'
+- name: '@avenue3-dev/format-age'
+  registry: npm
+  url: https://www.npmjs.com/package/@avenue3-dev/format-age
+  repository: https://github.com/Avenue3-dev/format-age
+  language: TypeScript
+  official: true
+  api_client: false
+  license: MIT
+  description: A utility for formatting age.
+  version: 0.2.4
+  published: '2025-05-09'
+excluded:
+- repository: https://github.com/Avenue3-dev/nhs-components
+  reason: >-
+    Fork of rowellx68/nhs-components, published to npm as `nhsuk-frontend-react` by its
+    upstream author, not by Avenue3. Not a first-party package.
+- repository: https://github.com/Avenue3-dev/sticky-pull-request-comment
+  reason: Fork of a third-party GitHub Action; not published by Avenue3.
+- repository: https://github.com/Avenue3-dev/npm-package-template
+  reason: Repository template, not a published package.
+- repository: https://github.com/Avenue3-dev/rhf-tsf-mantine
+  reason: Comparison/demo repository, not a published package.
+registry_coverage:
+  npm: 'searched registry.npmjs.org text search `avenue3` -> 3 packages, all under the @avenue3-dev scope'
+  nuget: 'searched azuresearch-usnc.nuget.org query `avenue3` -> 1 package'
+  pypi: no Avenue3-owned package found
+  maven: no Avenue3-owned artifact found
+  rubygems: no Avenue3-owned gem found
+  packagist: no Avenue3-owned package found
+  crates_io: no Avenue3-owned crate found
+  pkg_go_dev: no Avenue3-owned module found
